@@ -12,16 +12,16 @@ sayHello();
 // Local Scope
 function createName()
 {
-    $name = "IDN"; // local scope
+    $name1 = "IDN"; // local scope
 }
 
 createName();
-echo $name . PHP_EOL;
+echo $name1 . PHP_EOL;
 
 // Static Scope
 function increment()
 {
-    static $counter = 1; // static scope
+    $counter = 1; // static scope
     echo "Counter = $counter" . PHP_EOL;
     $counter++;
 }
